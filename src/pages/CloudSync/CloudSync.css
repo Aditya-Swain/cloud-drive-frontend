@@ -1,0 +1,45 @@
+.boxes {
+    height: 80%;
+    text-align: center;
+}
+
+.sync-box {
+    height: 60%;
+    width: 40%;
+    border: 10px solid rgb(206, 206, 252);
+    padding: 5rem;
+    align-items: center;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.middle-box {
+    width: 260px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.middle-box img {
+    opacity: 0.6;
+    width: 200px;
+    height: auto;
+
+}
+
+
+
+.switch {
+    background: transparent;
+    border: .5px solid rgb(139, 139, 178);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.sync-now{
+    background-color: rgb(206, 206, 252);
+    padding: 5px;
+    border-radius: 5px;
+    float: right;
+    
+}

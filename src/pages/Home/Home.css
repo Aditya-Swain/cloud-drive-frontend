@@ -1,0 +1,71 @@
+/* Make the overall container a flex container with wrapping */
+.storage-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 15px;       /* Space between items */
+    padding: 15px;
+}
+
+/* Style each storage item */
+.storage-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 10px;  /* Reduced padding */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, and flex-basis for smaller items */
+    max-width: 250px; /* Reduced max-width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Title for each account */
+.storage-item h5 {
+    font-size: 14px; /* Smaller font size */
+    font-weight: 500;
+}
+
+/* Style the progress bar */
+.progress {
+    width: 100%;
+    height: 12px;  /* Reduced height for the progress bar */
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* Text inside the progress bar */
+.progress-text {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-size: 10px; /* Smaller font size for progress text */
+    font-weight: bold;
+}
+
+/* Storage information text */
+.storage-info {
+    font-size: 12px;  /* Smaller font size for storage info */
+    color: #333;
+}
+
+/* Make sure the container items are aligned and spaced nicely */
+.storage-container .storage-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
